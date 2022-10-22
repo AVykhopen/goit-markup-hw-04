@@ -7,6 +7,7 @@
   --secondary-background-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --primary-button-color: #188ce8;
+  --social-link-background-color: rgba(255, 255, 255, 0.1);
 }
 /* Стилі Portfolio */
 body {
@@ -82,8 +83,6 @@ img {
   color: var(--primery-text-color);
 }
 /* Site nav */
-/* .site-nav {
-    display: inline-block; */
 .site-nav .link {
   color: var(--primery-text-color);
   text-decoration: none;
@@ -124,6 +123,9 @@ img {
 .hero {
   padding: 200px 0;
   background-color: var(--secondary-background-color);
+  background-position: cover;
+  max-width: 1600px;
+  background-image: url(../images/BGimg.jpg);
 }
 .hero-title {
   color: var(--secondary-text-color);
@@ -189,6 +191,23 @@ img {
   letter-spacing: 0.03em;
   font-style: normal;
 }
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background: var(--primery-background-color);
+  border-radius: 4px;
+}
+.icon-antena,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
+}
 .team-section {
   background-color: var(--primery-background-color);
 }
@@ -213,6 +232,26 @@ img {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.17;
+}
+.clients-logo {
+  display: flex;
+  gap: 30px;
+}
+.clients-list {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.client-icon {
+  width: 106px;
+  height: 60px;
+}
+.client-link {
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 /* footer */
 .footer {
@@ -260,6 +299,35 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+.section-title-footer {
+font-family: 'Roboto';
+display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.socials-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--secondary-text-color);
+  background-color: var(--social-link-background-color);
+  border-radius: 50%;
+}
+.socials-link:hover {
+  fill: var(--social-link-background-color);
+  background-color: var(--accent-color);
 }
 /* Стилі Portfolio */
 /* main */
@@ -332,7 +400,7 @@ img {
 }
 .portfolio-box {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--primery-background-color);
   border-top: none;
 }
 .card-box {
