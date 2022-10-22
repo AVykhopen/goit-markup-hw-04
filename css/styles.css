@@ -259,7 +259,7 @@ url('../images/BGimg.jpg');
   height: 44px;
   fill: var(--card-socials-color);
   background-color: var(--secondary-text-color);
-  border-radius: 50%;s
+  border-radius: 50%;
 }
 .card-socials-link:hover {
   fill: var(--primery-background-color);
@@ -272,7 +272,7 @@ url('../images/BGimg.jpg');
 .clients-list {
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--card-socials-color);
   border-radius: 4px;
 }
 .client-icon {
@@ -375,7 +375,7 @@ url('../images/BGimg.jpg');
   fill: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
-.links-social{
+.links-social {
   margin-left: 70px;
 }
 /* Стилі Portfolio */
@@ -446,6 +446,16 @@ url('../images/BGimg.jpg');
 }
 .portfolio-item {
   flex-basis: 370px;
+}
+.portfolio-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.portfolio-link:hover, 
+.portfolio-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-box {
   padding: 20px 24px;
