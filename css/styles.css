@@ -444,15 +444,14 @@ url('../images/BGimg.jpg');
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-item {
-  flex-basis: 370px;
-}
 .portfolio-link {
   color: var(--primary-text-color);
   text-decoration: none;
 }
-.portfolio-link:hover, 
-.portfolio-link:focus {
+.portfolio-item {
+  flex-basis: 370px;
+}
+.portfolio-link:hover {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
