@@ -115,18 +115,29 @@ img {
   font-weight: 500;
   padding: 32px 0;
   display: flex;
+  align-items: center;
+  fill: var(--title-text-color)
 }
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.contact-icon {
+  margin-right: 10px;
 }
 /* hero */
 .hero {
-  padding: 200px 0;
   background-color: var(--secondary-background-color);
-  background-position: cover;
+  padding: 200px 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1600px;
-  background-image: url(../images/BGimg.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+url('../images/BGimg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 .hero-title {
   color: var(--secondary-text-color);
@@ -238,6 +249,7 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-top: 16px;
 }
 .card-socials-link {
   display: flex;
@@ -284,16 +296,27 @@ img {
 }
 .logo-footer {
   color: var(--accent-color);
+  font-family: 'Raleway';
   text-decoration: none;
   font-size: 26px;
   line-height: 1.19;
   font-family: Raleway, sans-serif;
+  margin-top: 0px;
   margin-bottom: 20px;
   display: block;
+  font-weight: 700;
 }
 .logo-white {
   color: var(--secondary-text-color);
   text-decoration: none;
+}
+.main-adress {
+  display: flex;
+  align-items: baseline;
+}
+.adress-content {
+  display: block;
+  align-items: baseline;
 }
 .adress {
   color: var(--secondary-text-color);
@@ -324,20 +347,19 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.section-title-footer {
-font-family: 'Roboto';
-display: block;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-}
 .socials-list {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.section-title-footer {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .socials-link {
   display: flex;
@@ -352,6 +374,9 @@ text-transform: uppercase;
 .socials-link:hover {
   fill: var(--secondary-text-color);
   background-color: var(--accent-color);
+}
+.links-social{
+  margin-left: 70px;
 }
 /* Стилі Portfolio */
 /* main */
