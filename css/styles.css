@@ -8,6 +8,7 @@
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --primary-button-color: #188ce8;
   --social-link-background-color: rgba(255, 255, 255, 0.1);
+  --card-socials-color: #AFB1B8;
 }
 /* Стилі Portfolio */
 body {
@@ -233,6 +234,25 @@ img {
   font-size: 16px;
   line-height: 1.17;
 }
+.card-socials-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--card-socials-color);
+  background-color: var(--secondary-text-color);
+  border-radius: 50%;s
+}
+.card-socials-link:hover {
+  fill: var(--primery-background-color);
+  background-color: var(--accent-color);
+}
 .clients-logo {
   display: flex;
   gap: 30px;
@@ -252,6 +272,10 @@ img {
   align-items: center;
   justify-content: center;
   display: flex;
+  fill: var(--card-socials-color);
+}
+.client-icon:hover {
+  fill: var(--accent-color);
 }
 /* footer */
 .footer {
@@ -326,7 +350,7 @@ text-transform: uppercase;
   border-radius: 50%;
 }
 .socials-link:hover {
-  fill: var(--social-link-background-color);
+  fill: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
 /* Стилі Portfolio */
