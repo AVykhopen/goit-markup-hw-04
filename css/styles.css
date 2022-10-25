@@ -431,13 +431,10 @@ url('../images/BGimg.jpg');
   border-radius: 4px;
   font-style: normal;
 }
-.button-list .btn:hover,
-.button-list .btn:focus {
-  color: var(--accent-color);
-}
 .button-list .other:hover,
 .button-list .other:focus {
-  color: var(--accent-color);
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
 }
 .portfolio-list {
   display: flex;
